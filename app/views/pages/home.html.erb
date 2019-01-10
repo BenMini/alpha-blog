@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Navbars</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style type="text/css">
+    body { padding-top: 70px; }
+    .jumbotron {
+      color: #2c3e50;
+      background: #ecf0f1;
+
+    }
+    .navbar-inverse {
+      background: #2c3e50;
+      color: white;
+    }
+    .navbar-inverse .navbar-brand, .navbar-inverse a{
+      color:white;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: white;
+    } 
+    .paragraphLeft {
+    	float: left;
+    	width: 50%
+    }
+    .paragraphRight {
+    	float: right;
+    	width: 50%
+    }
+
+  </style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+  <div class="container">
+
+  <div class="jumbotron">
+    <h1><i class="fa fa-camera-retro"></i></span>Random Pics </h1>
+    <p>A bunch of beautiful images that I didn't take</p> 
+  </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="http://i.imgur.com/qK42fUu.jpg">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+    </div>
+ 
+
+<%= link_to 'About', about_path %>
+<div class="leftParagraph">
+<p> Bacon ipsum dolor amet shankle meatloaf 
+pig salami pork loin, turkey venison 
+ham hock chuck bresaola turducken 
+corned beef prosciutto frankfurter 
+pork. Spare ribs t-bone pork belly 
+shank sausage. Shank landjaeger 
+ribeye flank. Leberkas sirloin 
+ground round, picanha ribeye pork 
+belly boudin short loin prosciutto 
+shankle rump ball tip pork chop. 
+Boudin tenderloin doner 
+filet mignon pancetta tri-tip. 
+Beef tri-tip ball tip, 
+boudin pancetta pig filet mignon 
+buffalo shankle fatback. 
+Chicken pork strip steak pork 
+belly pig picanha, beef spare ribs.</p></div>
+
+<div class="rightParagraph"> 
+Porchetta frankfurter sirloin, 
+pork chop meatball filet mignon 
+spare ribs t-bone. T-bone pancetta 
+tri-tip ribeye turducken 
+beef pastrami kevin tongue 
+ball tip capicola kielbasa 
+swine ground round. 
+Burgdoggen leberkas tongue brisket. 
+Jerky flank ham hock kielbasa, 
+pork belly short loin buffalo. </div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<footer>
+  <p>Photos By </p>
+  <p>Text Courtesy of Bacon Ipsum</p>
+</footer>
+</body>
+</html>
